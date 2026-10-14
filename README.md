@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Dsscord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-LLM-Context-Memory-Optimization/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-LLM-Context-Memory-Optimization?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-LLM-Context-Memory-Optimization/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-LLM-Context-Memory-Optimization?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-LLM-Context-Memory-Optimization/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-LLM-Context-Memory-Optimization?style=flat-square&color=blue" alt="Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-LLM-Context-Memory-Optimization/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-LLM-Context-Memory-Optimization?style=flat-square&color=emerald" alt="Issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-LLM-Context-Memory-Optimization/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square" alt="License"/></a>
@@ -90,126 +90,126 @@ The table below catalogs managed SaaS platforms and cloud memory layers. Entries
 
 Explore the leading self-hosted and open-source frameworks for agent memory, temporal graphs, semantic caching, and KV compression. 
 
-Repositories are **sorted strictly in descending order by GitHub Star count**:
+Repositories are **sorted strictly in descending order by GitHub Stars_Count**:
 
-1. **[Mem0](https://github.com/mem0ai/mem0)** [![GitHub stars](https://img.shields.io/github/stars/mem0ai/mem0?style=social&color=white)](https://github.com/mem0ai/mem0/stargazers)  
+1. **[Mem0](https://github.com/mem0ai/mem0)** [![GitHub_Stars](https://img.shields.io/github/stars/mem0ai/mem0?style=social&color=white)](https://github.com/mem0ai/mem0/stargazers)  
    **The universal memory layer for AI agents and assistants (Apache 2.0).**  
    - Drop-in architecture: `pip install mem0ai`, initialize `Memory()`, and gain persistent cross-session state in five lines of code.
    - Extracts semantic facts, links entities, and organizes state across multiple scopes: `user_id`, `agent_id`, `session_id`, and `org_id`.
    - Default stack integrates SQLite for change history, Qdrant for dense vectors, and LLM-guided memory update/delete heuristics.
    - Self-hosted Docker server features multi-tenant API key management and full audit logs. LOCOMO benchmark SOTA (84.5%).
 
-2. **[Hindsight](https://github.com/vectorize-io/hindsight)** [![GitHub stars](https://img.shields.io/github/stars/vectorize-io/hindsight?style=social&color=white)](https://github.com/vectorize-io/hindsight/stargazers)  
+2. **[Hindsight](https://github.com/vectorize-io/hindsight)** [![GitHub_Stars](https://img.shields.io/github/stars/vectorize-io/hindsight?style=social&color=white)](https://github.com/vectorize-io/hindsight/stargazers)  
    **Agent Memory That Learns.**  
    - Continuous self-improving memory architecture designed to help agents adapt to user preferences and dynamic tasks over time.
    - Integrates reinforcement feedback loops directly into the memory retrieval index, pruning irrelevant context dynamically.
 
-3. **[OpenViking](https://github.com/volcengine/OpenViking)** [![GitHub stars](https://img.shields.io/github/stars/volcengine/OpenViking?style=social&color=white)](https://github.com/volcengine/OpenViking/stargazers)  
+3. **[OpenViking](https://github.com/volcengine/OpenViking)** [![GitHub_Stars](https://img.shields.io/github/stars/volcengine/OpenViking?style=social&color=white)](https://github.com/volcengine/OpenViking/stargazers)  
    **Self-evolving Context Database for AI Agents.**  
    - Unifies Agent Memory, Knowledge RAG, and Skill Library into a cohesive high-performance vector-relational context database.
    - Engineered for massive production agent deployments requiring high concurrency and zero memory fragmentation.
 
-4. **[Cognee](https://github.com/topoteretes/cognee)** [![GitHub stars](https://img.shields.io/github/stars/topoteretes/cognee?style=social&color=white)](https://github.com/topoteretes/cognee/stargazers)  
+4. **[Cognee](https://github.com/topoteretes/cognee)** [![GitHub_Stars](https://img.shields.io/github/stars/topoteretes/cognee?style=social&color=white)](https://github.com/topoteretes/cognee/stargazers)  
    **Deterministic Memory & Knowledge Engine for AI Agents.**  
    - Bridges the gap between vector stores and graph databases by building structured, interconnected knowledge graphs from conversational context.
    - Organizes raw documents and chats into typed topological hierarchies for deterministic multi-hop reasoning.
 
-5. **[Graphiti](https://github.com/getzep/graphiti)** [![GitHub stars](https://img.shields.io/github/stars/getzep/graphiti?style=social&color=white)](https://github.com/getzep/graphiti/stargazers)  
+5. **[Graphiti](https://github.com/getzep/graphiti)** [![GitHub_Stars](https://img.shields.io/github/stars/getzep/graphiti?style=social&color=white)](https://github.com/getzep/graphiti/stargazers)  
    **Temporal Knowledge Graph framework developed by Zep (Apache 2.0).**  
    - Features a **bi-temporal edge model**: each relational edge records `valid_at` (real-world event time) and `created_at` (graph ingestion time).
    - Resolves conflicting facts across time (e.g., "I live in Paris" → "I moved to Tokyo") without destructive overwrites, preserving historical context.
    - Employs cross-encoder reranking over Neo4j or Kùzu backends to deliver superior retrieval precision compared to cosine distance.
 
-6. **[Supermemory](https://github.com/supermemoryai/supermemory)** [![GitHub stars](https://img.shields.io/github/stars/supermemoryai/supermemory?style=social&color=white)](https://github.com/supermemoryai/supermemory/stargazers)  
+6. **[Supermemory](https://github.com/supermemoryai/supermemory)** [![GitHub_Stars](https://img.shields.io/github/stars/supermemoryai/supermemory?style=social&color=white)](https://github.com/supermemoryai/supermemory/stargazers)  
    **Personal & Agent Memory Hub with MCP Integrations.**  
    - Open-source second-brain engine providing long-term recall, bookmark indexing, and user profile management.
    - Native Model Context Protocol (MCP) server enables direct connections from Claude Code, Cursor, Windsurf, and custom agent loops.
 
-7. **[TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** [![GitHub stars](https://img.shields.io/github/stars/TencentCloud/TencentDB-Agent-Memory?style=social&color=white)](https://github.com/TencentCloud/TencentDB-Agent-Memory/stargazers)  
+7. **[TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** [![GitHub_Stars](https://img.shields.io/github/stars/TencentCloud/TencentDB-Agent-Memory?style=social&color=white)](https://github.com/TencentCloud/TencentDB-Agent-Memory/stargazers)  
    **Team-Level Memory Hub for Collaborative AI Agents.**  
    - Converts conversations, docs, and code into four reusable memory assets: Chat Memory, Skill Bank, LLM-Wiki, and Code-Graph.
    - Built for enterprise governance, shared multi-agent state, and zero-redundancy cross-agent context sharing.
 
-8. **[Letta (MemGPT)](https://github.com/letta-ai/letta)** [![GitHub stars](https://img.shields.io/github/stars/letta-ai/letta?style=social&color=white)](https://github.com/letta-ai/letta/stargazers)  
+8. **[Letta (MemGPT)](https://github.com/letta-ai/letta)** [![GitHub_Stars](https://img.shields.io/github/stars/letta-ai/letta?style=social&color=white)](https://github.com/letta-ai/letta/stargazers)  
    **Stateful Agent Runtime with OS-Inspired Virtual Memory Paging.**  
    - Empowers LLM agents to maintain perpetual life by managing memory tiers analogous to OS paging: Core Memory (RAM/active context) and Archival Memory (Disk/vector DB).
    - Agents autonomously edit, append, and prune their own memory blocks using built-in system tools.
    - Ships with an Agent Development Environment (ADE) web UI, REST API server on port 8283, and PostgreSQL migration support.
 
-9. **[Bifrost](https://github.com/maximhq/bifrost)** [![GitHub stars](https://img.shields.io/github/stars/maximhq/bifrost?style=social&color=white)](https://github.com/maximhq/bifrost/stargazers)  
+9. **[Bifrost](https://github.com/maximhq/bifrost)** [![GitHub_Stars](https://img.shields.io/github/stars/maximhq/bifrost?style=social&color=white)](https://github.com/maximhq/bifrost/stargazers)  
    **Ultra-Fast AI Gateway with Sub-200µs Semantic Caching.**  
    - High-performance enterprise AI gateway supporting 10,000+ models with integrated semantic caching, virtual keys, and prompt deduplication.
    - Saves up to 40% in API costs by evicting redundant queries at the network perimeter before reaching model providers.
 
-10. **[GPTCache](https://github.com/zilliztech/GPTCache)** [![GitHub stars](https://img.shields.io/github/stars/zilliztech/GPTCache?style=social&color=white)](https://github.com/zilliztech/GPTCache/stargazers)  
+10. **[GPTCache](https://github.com/zilliztech/GPTCache)** [![GitHub_Stars](https://img.shields.io/github/stars/zilliztech/GPTCache?style=social&color=white)](https://github.com/zilliztech/GPTCache/stargazers)  
     **Semantic Cache for LLMs by Zilliz.**  
     - High-speed caching layer that intercepts identical and semantically similar prompts to bypass inference latency and LLM costs.
     - Modular architecture supporting multiple embedding models, similarity evaluation algorithms, and vector stores (Milvus, Chroma, FAISS, Redis).
 
-11. **[RuVector](https://github.com/ruvnet/RuVector)** [![GitHub stars](https://img.shields.io/github/stars/ruvnet/RuVector?style=social&color=white)](https://github.com/ruvnet/RuVector/stargazers)  
+11. **[RuVector](https://github.com/ruvnet/RuVector)** [![GitHub_Stars](https://img.shields.io/github/stars/ruvnet/RuVector?style=social&color=white)](https://github.com/ruvnet/RuVector/stargazers)  
     **Real-Time Vector GNN Database Built in Rust.**  
     - Blends high-performance Graph Neural Networks with vector search for sub-millisecond agent memory retrieval.
     - Extreme memory efficiency with zero-copy Rust serialization for embedded and edge-device agents.
 
-12. **[CozoDB](https://github.com/cozodb/cozo)** [![GitHub stars](https://img.shields.io/github/stars/cozodb/cozo?style=social&color=white)](https://github.com/cozodb/cozo/stargazers)  
+12. **[CozoDB](https://github.com/cozodb/cozo)** [![GitHub_Stars](https://img.shields.io/github/stars/cozodb/cozo?style=social&color=white)](https://github.com/cozodb/cozo/stargazers)  
     **Transactional Relational-Graph-Vector Hybrid Database.**  
     - Graph-relational hybrid DB using Datalog for complex rule execution, graph pattern matching, and HNSW vector similarity search in a single embedded engine.
     - Ideal backing store for agents requiring temporal graph validation and multi-entity queries.
 
-13. **[XERJ](https://github.com/xerj-org/xerj)** [![GitHub stars](https://img.shields.io/github/stars/xerj-org/xerj?style=social&color=white)](https://github.com/xerj-org/xerj/stargazers)  
+13. **[XERJ](https://github.com/xerj-org/xerj)** [![GitHub_Stars](https://img.shields.io/github/stars/xerj-org/xerj?style=social&color=white)](https://github.com/xerj-org/xerj/stargazers)  
     **High-Efficiency Token-Saving Code & Document Memory Engine.**  
     - Auto-indexes codebases, documentation, and system logs to feed agents precise context slices with 40× fewer tokens than naive grep/sed retrieval.
     - Elasticsearch-compatible API for transparent integration with existing tools.
 
-14. **[Agent-Memory (tigerless-labs)](https://github.com/tigerless-labs/agent-memory)** [![GitHub stars](https://img.shields.io/github/stars/tigerless-labs/agent-memory?style=social&color=white)](https://github.com/tigerless-labs/agent-memory/stargazers)  
+14. **[Agent-Memory (tigerless-labs)](https://github.com/tigerless-labs/agent-memory)** [![GitHub_Stars](https://img.shields.io/github/stars/tigerless-labs/agent-memory?style=social&color=white)](https://github.com/tigerless-labs/agent-memory/stargazers)  
     **Markdown-Native Long-Term Memory Runtime for Coding Agents.**  
     - Plain Markdown as the single source of truth, local BM25 + dense ranking, and a detached "sleep-time" consolidation engine.
     - Shared unified store between Claude Code, Codex, and Cursor without external cloud dependencies.
 
-15. **[LangMem](https://github.com/langchain-ai/langmem)** [![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langmem?style=social&color=white)](https://github.com/langchain-ai/langmem/stargazers)  
+15. **[LangMem](https://github.com/langchain-ai/langmem)** [![GitHub_Stars](https://img.shields.io/github/stars/langchain-ai/langmem?style=social&color=white)](https://github.com/langchain-ai/langmem/stargazers)  
     **Long-Term Memory Toolkit by LangChain.**  
     - SDK designed for extracting, querying, and updating agent memories within LangGraph and LangChain workflows.
     - Supports background extraction, profile memory creation, episodic conversation summarization, and semantic clustering.
 
-16. **[nautilus-compass](https://github.com/chunxiaoxx/nautilus-compass)** [![GitHub stars](https://img.shields.io/github/stars/chunxiaoxx/nautilus-compass?style=social&color=white)](https://github.com/chunxiaoxx/nautilus-compass/stargazers)  
+16. **[nautilus-compass](https://github.com/chunxiaoxx/nautilus-compass)** [![GitHub_Stars](https://img.shields.io/github/stars/chunxiaoxx/nautilus-compass?style=social&color=white)](https://github.com/chunxiaoxx/nautilus-compass/stargazers)  
     **MCP-Native Memory with Behavioral Drift Detection.**  
     - Built-in drift detection (AUC 0.83 on held-out agent failure traces) and Merkle tree integrity audit logging.
     - Benchmarks **P@1 0.890** on LongMemEval-S retrieval, exceeding baseline vector memory implementations.
 
-17. **[A-mem](https://github.com/agiresearch/A-mem)** [![GitHub stars](https://img.shields.io/github/stars/agiresearch/A-mem?style=social&color=white)](https://github.com/agiresearch/A-mem/stargazers)  
+17. **[A-mem](https://github.com/agiresearch/A-mem)** [![GitHub_Stars](https://img.shields.io/github/stars/agiresearch/A-mem?style=social&color=white)](https://github.com/agiresearch/A-mem/stargazers)  
     **Agentic Memory for LLM Agents.**  
     - Dynamic agent-centric memory management simulating cognitive memory consolidation, semantic associations, and memory decay.
 
-18. **[deja-vu](https://github.com/vshulcz/deja-vu)** [![GitHub stars](https://img.shields.io/github/stars/vshulcz/deja-vu?style=social&color=white)](https://github.com/vshulcz/deja-vu/stargazers)  
+18. **[deja-vu](https://github.com/vshulcz/deja-vu)** [![GitHub_Stars](https://img.shields.io/github/stars/vshulcz/deja-vu?style=social&color=white)](https://github.com/vshulcz/deja-vu/stargazers)  
     **Zero-LLM Coding Agent Memory Engine.**  
     - Compiles persistent memory directly from existing session history on disk across 40+ IDEs and agents (Claude Code, Codex, Cursor).
     - Ships as a single Go binary with native MCP tools and zero token usage during memory compilation.
 
-19. **[ModelCache](https://github.com/codefuse-ai/ModelCache)** [![GitHub stars](https://img.shields.io/github/stars/codefuse-ai/ModelCache?style=social&color=white)](https://github.com/codefuse-ai/ModelCache/stargazers)  
+19. **[ModelCache](https://github.com/codefuse-ai/ModelCache)** [![GitHub_Stars](https://img.shields.io/github/stars/codefuse-ai/ModelCache?style=social&color=white)](https://github.com/codefuse-ai/ModelCache/stargazers)  
     **Enterprise Semantic Caching System by CodeFuse.**  
     - Enhances user experience and lowers inference overhead via dynamic query-result caching and prompt normalization.
 
-20. **[GrayMatter](https://github.com/angelnicolasc/graymatter)** [![GitHub stars](https://img.shields.io/github/stars/angelnicolasc/graymatter?style=social&color=white)](https://github.com/angelnicolasc/graymatter/stargazers)  
+20. **[GrayMatter](https://github.com/angelnicolasc/graymatter)** [![GitHub_Stars](https://img.shields.io/github/stars/angelnicolasc/graymatter?style=social&color=white)](https://github.com/angelnicolasc/graymatter/stargazers)  
     **Go-Based Memory Engine with Massive Token Reduction.**  
     - Achieves **90% token reduction at 100 sessions** (6,960 tokens → 670 tokens) via proactive context compaction.
     - Provides 7 MCP tools, interactive TUI graph explorer, and 25 verified IDE configurations (Cursor, Windsurf, Claude Code).
 
-21. **[total-agent-memory](https://github.com/vbcherepanov/total-agent-memory)** [![GitHub stars](https://img.shields.io/github/stars/vbcherepanov/total-agent-memory?style=social&color=white)](https://github.com/vbcherepanov/total-agent-memory/stargazers)  
+21. **[total-agent-memory](https://github.com/vbcherepanov/total-agent-memory)** [![GitHub_Stars](https://img.shields.io/github/stars/vbcherepanov/total-agent-memory?style=social&color=white)](https://github.com/vbcherepanov/total-agent-memory/stargazers)  
     **Local Memory Server with 6-Stage Recall Pipeline.**  
     - Hybrid retrieval: BM25 (SQLite FTS5) + Dense (FastEmbed) + Fuzzy + Graph Expansion + CrossEncoder + MMR diversity.
     - Includes 3D WebGL knowledge graph viewer rendering 3,500+ nodes, Agent-to-Agent (A2A) sync, and phase-scoped rules reducing tokens by ~70%.
 
-22. **[ICO-Cache](https://github.com/DEV-S-SHAH/ICO)** [![GitHub stars](https://img.shields.io/github/stars/DEV-S-SHAH/ICO?style=social&color=white)](https://github.com/DEV-S-SHAH/ICO/stargazers)  
+22. **[ICO-Cache](https://github.com/DEV-S-SHAH/ICO)** [![GitHub_Stars](https://img.shields.io/github/stars/DEV-S-SHAH/ICO?style=social&color=white)](https://github.com/DEV-S-SHAH/ICO/stargazers)  
     **Generalized LLM Semantic Cache with 0% False Hits.**  
     - Benchmarked **0% false-hit rate** on 100 adversarial near-miss negatives and **100% true-hit rate** on paraphrased queries with ~46ms latency.
     - Multi-layer verification: Exact hash + LanceDB semantic vector + strict entity and topic metadata guards.
 
-23. **[deepcq](https://github.com/ternary-ai/deepcq)** [![GitHub stars](https://img.shields.io/github/stars/ternary-ai/deepcq?style=social&color=white)](https://github.com/ternary-ai/deepcq/stargazers)  
+23. **[deepcq](https://github.com/ternary-ai/deepcq)** [![GitHub_Stars](https://img.shields.io/github/stars/ternary-ai/deepcq?style=social&color=white)](https://github.com/ternary-ai/deepcq/stargazers)  
     **Zero-Embedding Intent-Aware Memory Querying.**  
     - Evaluates query relevance using regex and token stemming without heavy vector databases or external embedding models.
     - Implements five memory tiers: AppState, SessionCache (LRU), History (sliding window), LongTermStore, and ReferenceData.
 
-24. **[nearlossless-context](https://github.com/nilsperssonsuorra/nearlossless-context)** [![GitHub stars](https://img.shields.io/github/stars/nilsperssonsuorra/nearlossless-context?style=social&color=white)](https://github.com/nilsperssonsuorra/nearlossless-context/stargazers)  
+24. **[nearlossless-context](https://github.com/nilsperssonsuorra/nearlossless-context)** [![GitHub_Stars](https://img.shields.io/github/stars/nilsperssonsuorra/nearlossless-context?style=social&color=white)](https://github.com/nilsperssonsuorra/nearlossless-context/stargazers)  
     **Training-Free KV Cache Compression for Long Contexts.**  
     - Retains critical local attention neighborhoods while dynamically compressing trailing tokens; maintains flat VRAM from 4k to 40k tokens.
     - Posthoc query-aware mode delivers **0.95–1.0× full F1** retrieval at a fraction of standard GPU memory requirements.
@@ -256,7 +256,7 @@ We welcome additions, corrections, and benchmark submissions from researchers an
 2. Create your feature branch: `git checkout -b feature/add-new-memory-engine`
 3. Follow the standard format:
    - Include project name, official GitHub / website URL.
-   - For open-source repos: include star badge linked to stargazers and insert in sorted order.
+   - For open-source repos: include Stars_Badge linked to stargazers and insert in sorted order.
    - For SaaS tools: include verified starting price, free tier details, and company valuation.
 4. Submit a Pull Request with a concise summary of the framework and benchmark evidence.
 
