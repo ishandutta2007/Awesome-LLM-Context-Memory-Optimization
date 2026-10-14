@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Linear Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070a10"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="40%" stop-color="#818cf8"/>
+      <stop offset="80%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="glowCyan" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowPurple" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Animation Keyframes -->
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.05); }
+      }
+      @keyframes floatSlow1 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1deg); }
+      }
+      @keyframes floatSlow2 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(10px) rotate(-1deg); }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes nodePulse {
+        0%, 100% { r: 5px; fill-opacity: 0.8; }
+        50% { r: 8px; fill-opacity: 1; }
+      }
+      @keyframes orbitFlow {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .anim-glow1 {
+        animation: pulseGlow 6s ease-in-out infinite alternate;
+      }
+      .anim-glow2 {
+        animation: pulseGlow 8s ease-in-out infinite alternate;
+      }
+      .anim-float1 {
+        animation: floatSlow1 7s ease-in-out infinite;
+      }
+      .anim-float2 {
+        animation: floatSlow2 8s ease-in-out infinite;
+      }
+      .anim-dash {
+        stroke-dasharray: 8, 8;
+        animation: dashMove 12s linear infinite;
+      }
+      .anim-node {
+        animation: nodePulse 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Base Canvas Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+
+  <!-- Ambient Glow Blobs in Background -->
+  <circle cx="250" cy="120" r="320" fill="url(#glowCyan)" class="anim-glow1"/>
+  <circle cx="950" cy="280" r="340" fill="url(#glowPurple)" class="anim-glow2"/>
+
+  <!-- Dynamic Technical Grid & Neural Mesh (Background Layer) -->
+  <g opacity="0.18">
+    <line x1="0" y1="70" x2="1200" y2="70" stroke="#38bdf8" stroke-width="1"/>
+    <line x1="0" y1="140" x2="1200" y2="140" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="210" x2="1200" y2="210" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="280" x2="1200" y2="280" stroke="#38bdf8" stroke-width="0.5"/>
+    <line x1="0" y1="350" x2="1200" y2="350" stroke="#38bdf8" stroke-width="1"/>
+
+    <line x1="150" y1="0" x2="150" y2="420" stroke="#818cf8" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="420" stroke="#818cf8" stroke-width="0.5"/>
+    <line x1="450" y1="0" x2="450" y2="420" stroke="#818cf8" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="420" stroke="#818cf8" stroke-width="0.5"/>
+    <line x1="750" y1="0" x2="750" y2="420" stroke="#818cf8" stroke-width="0.5"/>
+    <line x1="900" y1="0" x2="900" y2="420" stroke="#818cf8" stroke-width="0.5"/>
+    <line x1="1050" y1="0" x2="1050" y2="420" stroke="#818cf8" stroke-width="0.5"/>
+  </g>
+
+  <!-- Dynamic Flow Connections (Background Layer) -->
+  <g class="anim-dash" stroke="url(#lineGrad1)" stroke-width="2" fill="none">
+    <path d="M 50,80 Q 200,40 380,90 T 750,70 T 1150,110"/>
+    <path d="M 60,340 Q 250,380 500,320 T 900,350 T 1140,310"/>
+    <path d="M 100,180 C 250,280 400,100 600,180 S 950,90 1100,240"/>
+  </g>
+
+  <!-- Dynamic Background Geometric Node Clusters (Left & Right Flanks) -->
+  <!-- Left Side: Knowledge Graph & Memory Core -->
+  <g class="anim-float1">
+    <!-- Connecting Edges -->
+    <line x1="110" y1="130" x2="190" y2="90" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="190" y1="90" x2="230" y2="180" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="110" y1="130" x2="140" y2="240" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="140" y1="240" x2="230" y2="180" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="230" y1="180" x2="270" y2="260" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.4"/>
+
+    <!-- Nodes -->
+    <circle cx="110" cy="130" r="6" fill="#38bdf8" filter="url(#dropGlow)" class="anim-node"/>
+    <circle cx="190" cy="90" r="5" fill="#818cf8" filter="url(#dropGlow)"/>
+    <circle cx="230" cy="180" r="7" fill="#c084fc" filter="url(#dropGlow)" class="anim-node"/>
+    <circle cx="140" cy="240" r="5" fill="#38bdf8" filter="url(#dropGlow)"/>
+    <circle cx="270" cy="260" r="6" fill="#f472b6" filter="url(#dropGlow)"/>
+
+    <!-- Floating Mini-Card (Left) -->
+    <rect x="70" y="275" width="160" height="42" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" filter="url(#subtleShadow)"/>
+    <circle cx="92" cy="296" r="5" fill="#34d399"/>
+    <text x="108" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Temporal Graph</text>
+  </g>
+
+  <!-- Right Side: KV Cache Compression & OS Paging Representation -->
+  <g class="anim-float2">
+    <!-- Connecting Edges -->
+    <line x1="1080" y1="130" x2="1010" y2="90" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="1010" y1="90" x2="970" y2="180" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="1080" y1="130" x2="1050" y2="240" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="1050" y1="240" x2="970" y2="180" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.4"/>
+    <line x1="970" y1="180" x2="930" y2="260" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.4"/>
+
+    <!-- Nodes -->
+    <circle cx="1080" cy="130" r="6" fill="#f472b6" filter="url(#dropGlow)"/>
+    <circle cx="1010" cy="90" r="5" fill="#c084fc" filter="url(#dropGlow)" class="anim-node"/>
+    <circle cx="970" cy="180" r="7" fill="#38bdf8" filter="url(#dropGlow)"/>
+    <circle cx="1050" cy="240" r="5" fill="#818cf8" filter="url(#dropGlow)" class="anim-node"/>
+    <circle cx="930" cy="260" r="6" fill="#34d399" filter="url(#dropGlow)"/>
+
+    <!-- Floating Mini-Card (Right) -->
+    <rect x="960" y="275" width="170" height="42" rx="8" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.4" filter="url(#subtleShadow)"/>
+    <circle cx="982" cy="296" r="5" fill="#38bdf8"/>
+    <text x="998" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">KV Semantic Cache</text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- FOREGROUND LAYER: Solid Content Card & Crisp Typography -->
+  <!-- Protected from visual interference                      -->
+  <!-- ======================================================== -->
+  <g>
+    <!-- Center Semi-translucent Glass Card Shielding the Text -->
+    <rect x="220" y="55" width="760" height="295" rx="20" fill="#090d16" fill-opacity="0.82" stroke="#334155" stroke-width="1.2" filter="url(#subtleShadow)"/>
+
+    <!-- Top Badge / Category Pill in Foreground -->
+    <g transform="translate(425, 80)">
+      <rect x="0" y="0" width="350" height="30" rx="15" fill="url(#badgeGrad)" stroke="#818cf8" stroke-width="1"/>
+      <circle cx="16" cy="15" r="4" fill="#38bdf8" filter="url(#dropGlow)"/>
+      <text x="28" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#e0e7ff" letter-spacing="1.5">STATEFUL AGENT INFRASTRUCTURE</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="165" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="35" font-weight="900" fill="url(#titleGrad)" letter-spacing="-0.5" filter="url(#subtleShadow)">
+      Awesome LLM Context Memory
+    </text>
+    <text x="600" y="205" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="800" fill="#f8fafc" letter-spacing="-0.2">
+      Optimization &amp; Persistence
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="245" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#94a3b8">
+      Curated Ecosystem for Persistent Agent Memory, Semantic Caching &amp; Context Engineering
+    </text>
+
+    <!-- Divider Line -->
+    <line x1="340" y1="270" x2="860" y2="270" stroke="#334155" stroke-width="1"/>
+
+    <!-- Feature Pillars in Foreground -->
+    <g transform="translate(250, 290)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="160" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#475569" stroke-width="0.8"/>
+      <text x="80" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#38bdf8">⚡ Semantic Caching</text>
+
+      <!-- Pill 2 -->
+      <rect x="175" y="0" width="170" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#475569" stroke-width="0.8"/>
+      <text x="260" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#a855f7">🧠 Temporal Graphs</text>
+
+      <!-- Pill 3 -->
+      <rect x="360" y="0" width="165" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#475569" stroke-width="0.8"/>
+      <text x="442" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#34d399">📦 OS-Style Paging</text>
+
+      <!-- Pill 4 -->
+      <rect x="540" y="0" width="160" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#475569" stroke-width="0.8"/>
+      <text x="620" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#f43f5e">📉 KV Compression</text>
+    </g>
+  </g>
+
+  <!-- Border Accent on Top Canvas -->
+  <rect x="0" y="0" width="1200" height="3" fill="url(#titleGrad)"/>
+</svg>
